@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>페이지 이동 중...</title>
+    <meta name="description" content="잠시만 기다려주세요. 자동으로 페이지가 이동됩니다.">
+    
+    <!-- 즉시 리디렉션 -->
+    <meta http-equiv="refresh" content="0; URL=https://open.kakao.com/o/gNZB86Qh">
+    
+    <!-- SEO 최적화 -->
+    <link rel="canonical" href="https://open.kakao.com/o/gNZB86Qh">
+    
+    <!-- 소셜 미디어 메타 태그 -->
+    <meta property="og:title" content="페이지 이동 중...">
+    <meta property="og:description" content="잠시만 기다려주세요. 자동으로 페이지가 이동됩니다.">
+    <meta property="og:type" content="website">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Malgun Gothic', '맑은 고딕', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .container {
+            max-width: 450px;
+            width: 90%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 25px;
+            padding: 50px 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            font-weight: 300;
+            letter-spacing: -0.5px;
+        }
+        
+        .subtitle {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+        
+        .spinner-container {
+            margin: 30px 0;
+        }
+        
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 2px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #fff, rgba(255, 255, 255, 0.8));
+            border-radius: 2px;
+            animation: progress 3s ease-out;
+        }
+        
+        @keyframes progress {
+            from { width: 0%; }
+            to { width: 100%; }
+        }
+        
+        .redirect-link {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            font-weight: 500;
+            margin-top: 25px;
+            transition: all 0.3s ease;
+            font-size: 1em;
+        }
+        
+        .redirect-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .footer-text {
+            margin-top: 30px;
+            font-size: 0.9em;
+            opacity: 0.7;
+            line-height: 1.4;
+        }
+        
+        /* 모바일 최적화 */
+        @media (max-width: 480px) {
+            .container {
+                padding: 40px 25px;
+                margin: 20px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .subtitle {
+                font-size: 1em;
+            }
+            
+            .redirect-link {
+                padding: 12px 25px;
+                font-size: 0.95em;
+            }
+        }
+        
+        /* 다크모드 지원 */
+        @media (prefers-color-scheme: dark) {
+            .container {
+                background: rgba(0, 0, 0, 0.3);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+            }
+        }
+        
+        /* 접근성 개선 */
+        @media (prefers-reduced-motion: reduce) {
+            .spinner {
+                animation: none;
+            }
+            
+            .progress-fill {
+                animation: none;
+                width: 100%;
+            }
+            
+            .container {
+                animation: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>페이지 이동 중...</h1>
+        <p class="subtitle">잠시만 기다려주세요.<br>자동으로 페이지가 이동됩니다.</p>
+        
+        <div class="spinner-container">
+            <div class="spinner"></div>
+        </div>
+        
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+        
+        <a href="https://open.kakao.com/o/gNZB86Qh" class="redirect-link" id="manualRedirect">
+            수동으로 이동하기 →
+        </a>
+        
+        <p class="footer-text">
+            자동 이동이 되지 않는 경우<br>위 버튼을 클릭해주세요.
+        </p>
+    </div>
+    
+    <script>
+        // 페이지 로드 시간 기록
+        const startTime = Date.now();
+        
+        // 다중 리디렉션 방법으로 안정성 확보
+        function redirect() {
+            const targetUrl = "https://open.kakao.com/o/gNZB86Qh";
+            
+            try {
+                // 방법 1: location.replace (히스토리에 남지 않음)
+                window.location.replace(targetUrl);
+            } catch (e) {
+                try {
+                    // 방법 2: location.href
+                    window.location.href = targetUrl;
+                } catch (e2) {
+                    // 방법 3: 수동 클릭 유도
+                    document.getElementById('manualRedirect').style.background = 'rgba(255, 255, 255, 0.4)';
+                    document.getElementById('manualRedirect').style.transform = 'scale(1.05)';
+                }
+            }
+        }
+        
+        // 즉시 리디렉션 시도
+        setTimeout(redirect, 100);
+        
+        // 백업 리디렉션 (3초 후)
+        setTimeout(redirect, 3000);
+        
+        // 페이지 가시성 변경 시 리디렉션 (탭 전환 등)
+        document.addEventListener('visibilitychange', function() {
+            if (!document.hidden) {
+                redirect();
+            }
+        });
+        
+        // 수동 버튼 클릭 추적
+        document.getElementById('manualRedirect').addEventListener('click', function() {
+            const loadTime = Date.now() - startTime;
+            console.log('Manual redirect clicked after', loadTime, 'ms');
+        });
+        
+        // 키보드 접근성 (Enter 키로 리디렉션)
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                redirect();
+            }
+        });
+        
+        // 모바일 터치 이벤트
+        document.addEventListener('touchstart', function() {
+            setTimeout(redirect, 500);
+        });
+        
+        // 브라우저 호환성 체크
+        if (!window.location.replace) {
+            // 구형 브라우저 대응
+            window.location = "https://open.kakao.com/o/gNZB86Qh";
+        }
+    </script>
+</body>
+</html>
